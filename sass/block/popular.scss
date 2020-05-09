@@ -1,0 +1,112 @@
+.popular{
+   display: block;
+}
+.popular__conteiner{
+    display:grid;
+    grid-template-columns: repeat(16, 6.25% );
+    /* grid-template-rows: 1635% 1855%; */
+    grid-template-rows: 321px 371px;
+    row-gap: 20px;
+  
+    h3{
+            font-size: 2.1538rem;
+            color: $white;
+            line-height: 1;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 7px;
+            margin: 0;
+            text-align: center;
+    }
+}
+.recomend__title{
+    margin-top: 4.18%;
+    margin-bottom: 4.18%;
+}
+.popular__mens-classic{
+    grid-column: span 10;
+    grid-row: span 1;
+    background: url('../img/men-classic.jpg') center no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+    position: relative;
+    transition-property: filter;
+    transition-duration: 500ms;
+    &:hover{
+        &{
+            filter: sepia(100%);
+        }
+    }
+    h3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%)
+    }
+   
+
+
+}
+.popular__allday-classic{
+    grid-column: span 6;
+    grid-row: span 2;
+    background: url('../img/allday-classic.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+    transition-property: filter;
+    transition-duration: 500ms;
+    &:hover{
+        &{
+            filter: sepia(100%);
+        }
+    }
+    h3{
+        position: absolute;
+        top: 21.5%;
+        left: 50%;
+        transform:translateX(-50%)
+    }
+}
+
+.popular__buissnes{
+    grid-column: span 5;
+    background: url('../img/buissnes.jpg') center no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+    position: relative;
+    transition-property: filter;
+    transition-duration: 500ms;
+    &:hover{
+        &{
+            filter: grayscale(140%);
+        }
+    }
+    h3{
+        position: absolute;
+        top: 79%;
+        left: 50%;
+        transform:translateX(-50%)
+    }
+}
+
+.popular__women{
+    grid-column: span 5;
+    background: url('../img/women.jpg') center no-repeat;;
+    margin-right: 20px;
+    position: relative;
+    transition-property: filter;
+    transition-duration: 500ms;
+    &:hover{
+        &{
+            filter: brightness(130%);
+        }
+    }
+    h3{
+        position: absolute;
+        top: 79%;
+        left: 50%;
+        transform:translateX(-50%);
+        color:$black;
+    }
+
+}

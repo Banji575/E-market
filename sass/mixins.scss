@@ -1,0 +1,39 @@
+@mixin min-max($min-width, $max-width, $padding) {
+    min-width: $min-width;
+    max-width: $max-width;
+    padding: $padding;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+@mixin visually-hidden() {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+@mixin btn {
+    border: none;
+    box-shadow: none;
+    background-color: $blue;
+    font-size: 1.076rem;
+    color: $white;
+    font-weight: bold;
+    line-height: 1.429;
+    text-transform: uppercase;
+    position: relative;
+}
+@mixin visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}

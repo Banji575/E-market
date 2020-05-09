@@ -1,0 +1,87 @@
+.bestItem{
+    background: url('../img/best.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url('data:image/svg+xml;utf8,
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="45%" y1="100%" x2="55%" y2="0" stroke="rgb(255,255,255)" stroke-width="3"/></svg>');
+       
+    }
+    
+    
+    justify-content: space-between;
+    &__title{
+            font-size: 3.0769rem;
+            color: $white;
+            line-height: 0.5;
+            font-weight: 200;
+            margin: 0;
+    }
+    &__modelConteiner{
+        &--left{
+            padding: 4.9% 48% 4.625% 8%;
+        }
+        &--right{
+            padding: 4.9% 8% 4.625% 51.5%;
+           
+        }
+        
+    }
+}
+
+.bestItem__left, .bestItem__right{
+    
+    background-color: $black;
+    opacity: .6;
+    width: 48.35%;
+    
+}
+
+.bestItem__left{
+    margin-top: 25.75%;
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+}
+.bestItem__right{
+    margin-bottom: 25.75%;
+    clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
+    h3{
+        text-align: right;
+    }
+    p{
+        text-align: right;
+    }
+}
+
+.bestItem__info{
+    margin: 7.1% 0 5% 0;
+        font-size: 0.9231rem;
+        color: $white;
+        line-height: 1.5;
+
+}
+
+.bestItem__btn{
+    background-color: transparent;
+    color: $white;
+    padding: 12px 47px;
+    border: 1px solid $white;
+    transition-duration: 500ms;
+    transition-property: background-color;
+    display: block;
+    &--left{
+        margin-right: auto;
+    }
+    &--right{
+        margin-left: auto;
+    }
+    
+    &:hover{
+        background-color: $grey;
+        
+    }
+}

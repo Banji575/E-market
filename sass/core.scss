@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+html{
+    font-size: 13px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteiner{
+    @include min-max(320px, 100%, 0);
+    background-color: $white;
+}
+ul{
+    padding: 0;
+}
+
+@media(max-width:1500px){
+    html{
+        font-size: 11px;
+    }
+}
+
+.wrap{
+    padding-left: 3.75%;
+    padding-right: 3.75%;
+}

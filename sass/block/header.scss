@@ -1,0 +1,159 @@
+.header {
+    padding-left: 3.75%;
+    padding-right: 3.75%;
+    border-top: 1px solid rgba($black, 0.161);
+    border-bottom: 1px solid rgba($black, 0.161);
+   
+}
+
+.header__info {
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1.4%;
+    position: relative;
+
+    img {
+        margin-right: 7.95%;
+    }
+}
+
+.header__phones-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin-right: 2.5%;
+
+    svg {
+        margin-right: 6%;
+        fill: $blue;
+        transition-duration: 500ms;
+        transition-property: fill;
+
+        &:hover {
+            fill: $pink
+        }
+    }
+}
+
+
+
+.header__phones-list {
+    margin-right: 5.5%;
+
+    p {
+
+        margin: 0;
+        font-size: 1.39rem;
+        color: rgb(54, 54, 54);
+        line-height: 0.909;
+
+        &:first-child {
+            margin-bottom: 4.5%;
+        }
+    }
+}
+
+.header__phones-callback {
+    p {
+        a {
+            font-size: 1rem;
+            color: $blue;
+            line-height: 1.5;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+}
+
+.header__work-time {
+    flex-basis: 13.8%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-right: 7%;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 1px;
+        height: 40px;
+        background-color: rgba($black, 0.161);
+
+
+    }
+
+    &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 1px;
+        height: 40px;
+        background-color: rgba($black, 0.161);
+        right: 0;
+
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+
+        &:first-child {
+            margin-bottom: 4.8%;
+        }
+
+        span {
+            font-weight: 900;
+            margin-left: 4.3%;
+
+        }
+    }
+}
+
+.header__client-menu {
+    flex-basis: 13.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 4.5%;
+
+    svg {
+        fill: $grey;
+        transition-duration: 500ms;
+        transition-property: fill;
+
+        &:hover {
+            fill: $blue
+        }
+    }
+}
+
+.header__reg {
+    display: flex;
+    flex-basis: 4.5%;
+    align-items: center;
+
+    p {
+        font-size: 1rem;
+        margin-right: 6.8%;
+    }
+    svg{
+        fill: $grey;
+        transition-duration: 500ms;
+        transition-property: fill;
+
+        &:hover {
+            fill: $blue
+        }
+    }
+}
+
+@media(max-width:970px){
+    .header{
+        display: none;
+    }
+}

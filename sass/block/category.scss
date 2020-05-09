@@ -1,0 +1,161 @@
+.category {
+    padding-left: 3.75%;
+    padding-right: 3.75%;
+    padding-top: 1.31%;
+    padding-bottom: 1.31%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &__conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 44%;
+    }
+
+    &__men-watch,
+    &__women-watch {
+        font-size: 1rem;
+        color: $colorText;
+        font-weight: 800;
+        line-height: 1.538;
+        text-decoration: none;
+        transition-property: border;
+        transition-duration: 500ms;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            border-bottom: 1px solid $black;
+        }
+
+    }
+}
+
+.category__search {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1.31%;
+    padding-bottom: 1.31%;
+    box-sizing: border-box;
+    min-width: 24%;
+    border-radius: 0;
+    border: 1px solid #adadad;
+    font-style: italic;
+    color: $colorText;
+    background: url('../img/search.svg') right no-repeat;
+    background-size: 24px 22px;
+    background-position-x: 93%;
+
+}
+
+.category__btn {
+    @include btn;
+    padding: 20px 73px 22px 73px;
+    position: relative;
+    margin-right: 5.625%;
+    transition-property: color;
+    transition-duration: 500ms;
+
+    svg {
+        width: 23px;
+        height: 19px;
+        fill: $white;
+        position: absolute;
+        left: 28px;
+        top: 18px;
+        transition-property: fill;
+        transition-duration: 500ms;
+    }
+
+    &:hover {
+        color: $pink;
+
+        svg {
+            fill: $pink;
+        }
+    }
+}
+
+.categoryAll {
+
+    position: absolute;
+    width: 92.5%;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 82px;
+
+   
+
+
+    a {
+        text-decoration: none;
+        color: $colorText;
+        font-size: 1rem;
+        line-height: 1.538;
+        text-transform: uppercase;
+    }
+}
+
+.categoryAll__brand {
+    background-color: $white;
+    padding-top: 2.2%;
+    flex-basis: 18.1%;
+    text-align: left;
+    box-sizing: border-box;
+    display: block;
+    p{
+        margin-left:33% ;
+        margin-bottom: 32px;
+       
+    }
+   
+  
+}
+
+.categoryAll__model {
+    flex-basis: 15.54%;
+    border-right: 1px solid rgba($black, 0.161);
+    border-left: 1px solid rgba($black, 0.161);
+    border-top: 1px solid rgba($black, 0.161);
+    display: none;
+    p{
+       
+    }
+   
+}
+
+.categoryAll__subModel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30.4%;
+    align-items: flex-start;
+    display: none;
+
+    p {
+        display: block;
+        height: 10%;
+        margin: 0;
+
+    }
+}
+
+.categoryAll--active{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    position: relative;
+    &::after{
+        content: url('../img/back.svg');
+        position: absolute;
+        transform: rotate(180deg);
+        right: -25px;
+
+    }
+    
+}
+
+.categoryAll--open{
+    display: flex;
+}

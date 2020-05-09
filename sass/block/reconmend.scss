@@ -1,0 +1,231 @@
+$titleColor:#313131;
+$oldPrice:#ff2424;
+$oneClick:#484848;
+
+.recomend {
+    padding-top: 6.4%;
+}
+
+.recomend__conteiner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.18%;
+}
+
+.recomend__options {
+    position: absolute;
+    z-index: 2;
+    top: 26px;
+    left: 17px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.recomend__func {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+
+
+}
+
+.recomend__bluetouch {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: $blue;
+    text-align: center;
+    position: absolute;
+    left: 198px;
+    top: 46px ;
+    svg{
+        margin-top: 25%;
+    }
+    
+}
+
+.recomend__new {
+    font-size: 1.2308rem;
+    display: block;
+    font-size: 1.0769rem;
+    color: $white;
+    font-weight: bold;
+    line-height: 1.435;
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    background-color: $pink;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 25%;
+    
+
+
+}
+
+.recomend__sale {
+    display: block;
+    font-size: 1.0769rem;
+    color: $white;
+    font-weight: bold;
+    line-height: 1.435;
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    background-color: $orange;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 12px;
+    margin-top: 3px;
+
+}
+
+.recomend__conteiner-img {
+    border-radius: 50%;
+    
+    width: 225px;
+    height: 225px;
+    z-index: 1;
+    top: 0%;
+    left: 9%;
+    &--blue{
+        background-color: rgb(216, 240, 255);
+    }
+    &--pink{
+        background-color: #fde6c0;
+    }
+}
+
+.recomend__item {
+    padding: 40px 24px;
+    flex-basis: 18.5%;
+    position: relative;
+    border: 1px solid transparent;
+    transition-duration: 500ms;
+    transition-property: border;
+    &:hover{
+        border: 1px solid rgba(0,0,0, 0.149);
+          
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        z-index: 2;
+        position: relative;
+
+
+    }
+
+}
+
+.recomend__title {
+    margin: 0;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: $titleColor;
+    line-height: 0.767;
+    text-align: left;
+    font-weight: 300;
+
+    span {
+        font-weight: 800;
+    }
+
+    text-align: center;
+    
+}
+
+.recomend__watch-title {
+    font-size: 1.3077rem;
+    color: $titleColor;
+    font-weight: bold;
+    line-height: 1.176;
+    text-align: center;
+    margin: 12.77% 0 0 0;
+}
+.recomend__more{
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    svg{
+        fill:#bdbdbd;
+    }
+}
+.recomend__price {
+    font-size: 1.6923rem;
+    color: $titleColor;
+    line-height: 0.909;
+    text-align: center;
+    margin: 4.7% 0 0 0;
+}
+
+.recomend__old-price {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: $oldPrice;
+    text-decoration: line-through;
+    line-height: 1.429;
+}
+
+.recomend__btns {
+    margin: 9.12% 0 0 0;
+    display: flex;
+
+
+}
+
+.recomend__btn-buy {
+    @include btn;
+    flex-basis: 57.5%;
+    font-size: 1.1538rem;
+    color: $white;
+    font-weight: bold;
+    line-height: 1.333;
+    text-transform: capitalize;
+    padding-left: 15.1%;
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 6%;
+    margin-right: 1.6%;
+    transition-property: background-color;
+    transition-duration: 500ms;
+
+    &::before {
+        content: url('../img/shopping-cart.svg');
+        top: 9px;
+        left: 30px;
+        position: absolute;
+    }
+    &:hover{
+        background-color: darken($color: $blue, $amount: 10);
+    }
+
+}
+
+.recomend__btn-one-click {
+    flex-basis: 29.92%;
+    @include btn;
+    background-color: #b0d31f;
+    color: $oneClick;
+    font-size: 0.9231rem;
+    font-weight: bold;
+    line-height: 1.083;
+    transition-duration: 500ms;
+    transition-property: background-color;
+    &:hover{
+        background-color: darken(#b0d31f, $amount: 10);
+    }
+}
+
+.recomend__sale--none {
+    display: none;
+
+}

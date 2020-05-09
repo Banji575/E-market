@@ -1,0 +1,227 @@
+$bgColor:#f4f4f4;
+
+.footer {
+    display: flex;
+    background-color: $bgColor;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5.4%;
+    padding-bottom: 3.17%;
+}
+
+.footer__item {
+    flex-basis: 22%;
+
+}
+
+.footer__subscribe {}
+
+.footer__payCard {
+    svg {
+        width: 45px;
+        height: 33px;
+        fill: #555555;
+    }
+}
+
+.footer__subscribe {
+    p {
+        font-size: 1rem;
+        color: rgb(54, 54, 54);
+        font-weight: bold;
+        line-height: 1.385;
+        text-align: left;
+        margin: 0 0 26px 0;
+
+    }
+
+    label {
+        @include visually-hidden;
+    }
+}
+
+.footer__input-subscribe {
+    background-color: transparent;
+    border: 1px solid #9c9c9c;
+    padding: 14px 20px;
+    width: 70%;
+}
+
+.footer__subscribe-btn {
+    @include btn;
+    padding: 13px 40px;
+    margin-top: 13px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+
+    &:hover {
+        background-color: darken($color: $blue, $amount: 10);
+    }
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+
+    ul {
+        list-style: none;
+        margin: 0;
+
+        a {
+            text-decoration: none;
+            font-size: 1.1538rem;
+            color: rgb(54, 54, 54);
+            line-height: 2.333;
+            border-bottom: 1px solid transparent;
+            transition-property: border-color;
+            transition-duration: 500ms;
+
+            &:hover {
+                border-color: rgb(54, 54, 54);
+            }
+        }
+    }
+}
+
+.footer__rate-title {
+    font-size: 1.0769rem;
+    color: rgb(45, 45, 45);
+    font-weight: 800;
+    line-height: 1.429;
+    text-align: center;
+    margin: 0 0 18px 0;
+}
+
+.footer__rate-text {
+    font-size: 1rem;
+    color: rgb(45, 45, 45);
+    line-height: 1.231;
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+.footer__rate-stars {
+    text-align: center;
+
+    svg {
+        fill: #9c9c9c;
+    }
+}
+
+.footer__rate-btn {
+    @include btn;
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 15px 53px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+
+    &:hover {
+        background-color: darken($color: $blue, $amount: 10);
+    }
+}
+
+.footer__contact {
+    text-align: right;
+}
+
+.footer__contact-phone {
+    p {
+        font-size: 1.51rem;
+        color: rgb(54, 54, 54);
+        line-height: 0.871;
+        text-align: left;
+        margin: 0;
+        text-align: right;
+
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.footer__contact-callback {
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $blue;
+        font-style: italic;
+    }
+}
+
+.footer__contact-timeWork {
+    p{
+        margin: 0;
+        &:first-child{
+            margin-top: 24px;
+            margin-bottom: 6px;
+        }
+
+    }
+    span {
+        font-weight: 900;
+        margin-left: 4.3%;
+    }
+}
+.footer__payCard{
+    margin-top: 29px;
+}
+
+.footer__up{
+    margin-top:45px ;
+    button{
+        @include btn;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        transition-property: background-color;
+        transition-duration: 500ms;
+    
+        &:hover {
+            background-color: darken($color: $blue, $amount: 10);
+        }
+        &:before{
+            position: absolute;
+            content: '';
+            width: 9px ;
+            height: 1px;
+            background-color: $white;
+            display: block;
+            transform: rotate(-50deg);
+            left: 7px;
+            border-radius: 0 1px 0 0 ;
+        }
+        &:after{
+            position: absolute;
+            content: '';
+            width: 9px;
+            height: 1px;
+            background-color: $white;
+            display: block;
+            transform: rotate(50deg);
+            left: 13px;
+            border-radius: 1px 0 0 0 ;
+        }
+    }
+    p{
+        margin:0;
+            font-size: 0.6923rem;
+            color: rgb(30, 30, 30);
+            line-height: 2.226;
+           
+
+    }
+    
+}
+
+.footer__copyright{
+    margin: 0;
+    margin-top: 21px;
+        font-size: 11px;
+        color: rgb(54, 54, 54);
+        line-height: 1.821;
+        text-align: center;
+        flex-basis: 100%;
+}

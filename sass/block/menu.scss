@@ -1,0 +1,122 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 3.75%;
+    padding-right: 3.75%;
+    padding-top: 1.35%;
+    padding-bottom: 1.35%;
+
+    &__left {
+        flex-basis: 26.4%;
+    }
+
+    &__right {
+        flex-basis: 12.5%;
+    }
+
+    &__list-main {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        width: 100%;
+
+        a {
+            font-size: 1rem;
+            text-decoration: none;
+            color: $colorText;
+            line-height: 1.538;
+        }
+    }
+
+    &__item-main {
+        margin-right: 3.8%;
+      
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            border-bottom: 1px solid transparent;
+            transition-property: border-color;
+            transition-duration: 500ms;
+        }
+
+        &:hover {
+            a {
+                border-color: $colorText;
+
+            }
+        }
+
+    }
+
+    &__list-market {
+        display: flex;
+        list-style: none;
+
+        a {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.538;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition-property: border-color;
+            transition-duration: 500ms;
+
+        }
+    }
+
+    &__item-market {
+
+        margin-right: 8.1%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            a {
+                border-color: inherit;
+            }
+        }
+    }
+}
+
+.item--yellow {
+    color: #ffd715;
+}
+
+.item--viollet {
+    color: #ff4db4;
+}
+
+.item--blue {
+    color: #009fff;
+}
+
+@media(max-width:1316px){
+    .menu__left{
+        flex-basis: 30%;
+    }
+}
+@media(max-width:1160px){
+    .menu__left{
+        flex-basis: 40%;
+    }
+}
+@media(max-width:970px){
+    .menu{
+        
+        &__list-main{
+            justify-content: flex-start;
+        }
+    }
+    .menu__left{
+        flex-basis: 50%;
+    }
+    .menu__right{
+        flex-basis: 50%;
+    }
+}
